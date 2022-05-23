@@ -1,10 +1,12 @@
 const express = require('express');
+const { readFile } = require('fs/promises');
 const router = express.Router();
+// const fetch = require('node-fetch');
 
+// Temporary, TODO: move to service
 router.get('/', async (request, response) => {
     try {
-        // test the leetcode fetch here
-        response.send('fetch all received');
+        response.send(await readFile('src/cache/all-questions.txt', 'utf-8'));
     }
     catch (error) {
         response.status(500).json({ message: error.message });
