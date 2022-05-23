@@ -18,7 +18,8 @@
   "homepage": "https://github.com/JoshuaPark823/Tech_Interview_Helper#readme",
   "dependencies": {
     "express": "^4.18.1",
-    "mongoose": "^6.3.4"
+    "mongoose": "^6.3.4",
+    "node-fetch": "2.0"
   },
   "devDependencies": {
     "dotenv": "^16.0.1",
